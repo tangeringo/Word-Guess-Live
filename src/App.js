@@ -25,6 +25,7 @@ const App = () => {
   return (
     <Routes>
       <Router basename={process.env.PUBLIC_URL}>
+        <h2>Hello this is me</h2>
         {/* <Route exact path="/" element={<Navigation />} > */}
           {/* <Route path="/word-guess" element={<WordGuessPage />} /> */}
           {/* <Route path="/leader-board" element={<LeaderBoardPage />} /> */}
