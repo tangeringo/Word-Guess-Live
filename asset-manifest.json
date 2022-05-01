@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Word-Guess-Live/static/css/main.96f750d0.css",
+    "main.js": "/Word-Guess-Live/static/js/main.c422550c.js",
+    "static/js/27.2a6aa442.chunk.js": "/Word-Guess-Live/static/js/27.2a6aa442.chunk.js",
+    "static/media/google-sign-in.svg": "/Word-Guess-Live/static/media/google-sign-in.f2dc23f240e9a7e7c221089ab370d35f.svg",
+    "index.html": "/Word-Guess-Live/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.96f750d0.css",
+    "static/js/main.c422550c.js"
+  ]
+}
