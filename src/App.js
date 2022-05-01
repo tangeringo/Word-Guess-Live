@@ -25,11 +25,11 @@ const App = () => {
   return (
     <Routes>
       <Router basename={process.env.PUBLIC_URL}>
-        <Route exact path="/" element={<Navigation />} >
-          <Route path="/word-guess" element={<WordGuessPage />} />
-          <Route path="/leader-board" element={<LeaderBoardPage />} />
-          <Route path="sign-in" element={<Authentication />} />
-        </Route>
+        {/* <Route exact path="/" element={<Navigation />} > */}
+          {/* <Route path="/word-guess" element={<WordGuessPage />} /> */}
+          {/* <Route path="/leader-board" element={<LeaderBoardPage />} /> */}
+          {/* <Route path="sign-in" element={<Authentication />} /> */}
+        {/* </Route> */}
       </Router>
     </Routes>
   );
