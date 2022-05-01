@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Routes, Route } from 'react-router-dom';
+import { Router, Routes, Route } from 'react-router-dom';
 
 import { fetchGenWordStart } from './redux/generated.w/generated.w.actions';
 import { checkUserSession } from './redux/user/user.actions';
@@ -24,11 +24,13 @@ const App = () => {
 
   return (
     <Routes>
-      <Route basename={process.env.PUBLIC_URL} exact path="/" element={<Navigation />} >
-        <Route path="/word-guess" element={<WordGuessPage />} />
-        <Route path="/leader-board" element={<LeaderBoardPage />} />
-        <Route path="sign-in" element={<Authentication />} />
-      </Route>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Route exact path="/" element={<Navigation />} >
+          <Route path="/word-guess" element={<WordGuessPage />} />
+          <Route path="/leader-board" element={<LeaderBoardPage />} />
+          <Route path="sign-in" element={<Authentication />} />
+        </Route>
+      </Router>
     </Routes>
   );
 }
