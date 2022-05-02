@@ -26,7 +26,7 @@ const App = () => {
     <div>
       <Routes>
         <Route exact path="/" element={<Navigation />} >
-          <Route path="/word-guess-live" element={<WordGuessPage />} />
+          <Route path="/word-guess" element={<WordGuessPage />} />
           <Route path="/leader-board" element={<LeaderBoardPage />} />
           <Route path="sign-in" element={<Authentication />} />
         </Route>
