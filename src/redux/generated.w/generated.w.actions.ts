@@ -11,7 +11,7 @@ import {
 } from '../../utils/action/create-action';
 
 
-export type fetchGenWordStart = Action<GENERATED_WORD_TYPES.FETCH_GENERATED_WORD_START>
+export type FetchGenWordStart = Action<GENERATED_WORD_TYPES.FETCH_GENERATED_WORD_START>
 
 export type fetchGenWordSuccess = 
     ActionWithPayload<
@@ -26,7 +26,7 @@ export type fetchGenWordFailed =
 >
 
 
-export const fetchGenWordStart = withMatcher((): fetchGenWordStart => 
+export const fetchGenWordStart = withMatcher((): FetchGenWordStart => 
     createAction(GENERATED_WORD_TYPES.FETCH_GENERATED_WORD_START));
 
 
