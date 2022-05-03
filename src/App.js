@@ -25,8 +25,8 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Navigation />} >
-          <Route path="/word-guess" element={<WordGuessPage />} />
+        <Route path="/" element={<Navigation />} >
+          <Route index element={<WordGuessPage />} />
           <Route path="/leader-board" element={<LeaderBoardPage />} />
           <Route path="sign-in" element={<Authentication />} />
         </Route>
