@@ -5,7 +5,7 @@ export const GuessInputStyles = styled.input`
     background: linear-gradient(to top, #7882A4, #D1D1D1, #7882A4);
     display: flex;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px auto 10px;
     font-size: 1.5rem;
     width: 280px;
     letter-spacing: 2px;

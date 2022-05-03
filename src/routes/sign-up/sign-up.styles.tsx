@@ -7,6 +7,7 @@ export const Sign_Up_Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 380px;
+    margin: 10px 20px;
 `;
 
 export const Describtion = styled.h2`

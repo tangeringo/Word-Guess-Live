@@ -12,4 +12,14 @@ export const AttemptCountContainer = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     outline: 2px solid #7267CB;
     outline-offset: 2px;
+
+    @media screen and (max-width: 900px) {
+        position: static;
+        display: flex;
+        width: 80px;
+        height: 15px;
+        padding: 15px;
+        margin: 25px auto 10px;
+    }
+
 `;

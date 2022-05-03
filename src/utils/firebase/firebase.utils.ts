@@ -22,6 +22,8 @@ import {
   QueryDocumentSnapshot
 } from 'firebase/firestore';
 
+import { getCurrentFullDate } from '../what-date/what-day';
+
 const config = {
     apiKey: "AIzaSyDGn_lkYOU4DrhYNrKwgtTMt5BQThSx854",
     authDomain: "word-guess-db.firebaseapp.com",
@@ -101,12 +103,24 @@ export const createUserDocumentFromAuth = async (
     if (!userSnapshot.exists()) {
       const { displayName, email } = userAuth;
       const createdAt = new Date();
+      const day = 0;
+      const month = 0;
+      const minutes = 0;
+      const seconds = 0;
+      const attempt = 0;
+      const wordAlreadyGuessed = false;
   
       // all propriate data
       try {
         await setDoc(userDocRef, {
           displayName,
           email,
+          day,
+          month,
+          minutes,
+          seconds, 
+          attempt,
+          wordAlreadyGuessed,
           createdAt,
           ...additionalInformation,
         });

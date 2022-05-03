@@ -27,7 +27,7 @@ const LeaderBoardComponent: FC<UserData> = ({ userObj, rank }) => {
                     {'(' + rank + ')'}
                 </Element>
                 <Element>
-                    {nickName}
+                    {nickName? nickName : 'unknown'}
                 </Element>
                 <Attempt>
                     {attempt? attempt : 'yet zero'}

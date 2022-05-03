@@ -8,6 +8,7 @@ export const Sign_Up_Container = styled.div`
     align-items: center;
     width: 380px;
     padding: 20px 0;
+    margin: 10px 20px;
 `;
 
 export const H1 = styled.h1`

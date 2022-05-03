@@ -69,16 +69,16 @@ const WordGuessPage = () => {
     return (
         <div>
             <WordContainer />
-            <FooterItems>
-                <GuessInput
-                    id="input" required type="text" name="guess"
-                    placeholder="Type a Word: " autoComplete="off"
-                    onChange={inputChange}
-                    onKeyDown={inputEventFunctions}
-                />
-                <Button onClick={submitCheck}> Try </Button>
+                <FooterItems>
+                    <GuessInput
+                        id="input" required type="text" name="guess"
+                        placeholder="Type a Word: " autoComplete="off"
+                        onChange={inputChange}
+                        onKeyDown={inputEventFunctions}
+                    />
+                    <Button onClick={submitCheck}> Try </Button>
+                </FooterItems>
                 <Attempt attempt={attempt} />
-            </FooterItems>
         </div>
     );
 }
