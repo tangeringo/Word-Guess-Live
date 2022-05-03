@@ -25,7 +25,7 @@ const Navigation = () => {
                         <NavLink to="/sign-in"> Sign IN </NavLink>
                     )
                 }
-                <NavLink to="/word-guess"> Word </NavLink>
+                <NavLink to="/"> Word </NavLink>
                 <NavLink to="/leader-board"> LeaderBoard </NavLink>
             </PageLinks>
             <Outlet />
